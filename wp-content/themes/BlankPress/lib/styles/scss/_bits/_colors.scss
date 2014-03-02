@@ -1,0 +1,16 @@
+// COLOR VARIABLES
+
+// Neutral Colors
+$grayLight:       #f0f1f2;
+$gray:            #898d90;
+$grayDark:        #555;
+$grayDarker:      #333;
+$white:           #fff;
+$black:           #000;
+
+// Brand Colors
+
+$primaryColor:    $gray;
+$primaryDark:     darken($primaryColor, 20%);
+
+$bodyText:        $black;

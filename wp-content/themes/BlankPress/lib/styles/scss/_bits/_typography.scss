@@ -1,0 +1,61 @@
+// TYPOGRAPHY VARIABLES & STYLES
+// -----------------------------
+
+// Font Variables
+$primaryFont:     "Helvetica Neue", sans-serif;
+$headingFont:     "Helvetica Neue", serif;
+
+// Font Styles
+body {
+  color: $grayDark;
+  font-family: $primaryFont;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: rem-calc(20);
+  -webkit-font-smoothing: antialiased;
+}
+
+small {
+  display: block;
+  font-weight: 300;
+  line-height: rem-calc(21);
+  @include font-size(16);
+  
+  a { color: $grayDark; }
+  
+}
+
+h1 {
+  font-family: $headingFont;
+  font-weight: 300;
+  @include font-size(36);
+}
+
+h2 {
+  font-family: $headingFont;
+  font-weight: 700;
+  line-height: rem-calc(36);
+  text-transform: uppercase;
+  @include font-size(36);
+}
+
+h3 {
+  font-family: $headingFont;
+  font-weight: 100;
+  line-height: rem-calc(30);
+  margin-bottom: 0;
+  margin-top: 0;
+  @include font-size(24);
+}
+
+h4 {
+  font-family: $headingFont;
+  font-weight: 800;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+::selection {
+  background: $primaryColor;
+  color: $white;
+}

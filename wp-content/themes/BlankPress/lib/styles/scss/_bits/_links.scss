@@ -1,0 +1,10 @@
+// LINKS
+// ------------------------------------
+
+// Style all links
+a[role="link"] {
+  color: $primaryColor;
+  
+  &:hover { color: darken($primaryColor, 20); }
+  
+}

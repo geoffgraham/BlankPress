@@ -16,7 +16,7 @@ if (!function_exists('blankpress_scripts')) :
     // enqueue modernizr, jquery and foundation
     wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/lib/javascripts/modernizr.js', false ,'1.0', false );
     wp_enqueue_script( 'jquery', 'http://code.jquery.com/jquery-2.1.0.min.js', false ,'1.0', true );
-    wp_enqueue_script( 'foundation', get_template_directory_uri() . '/lib/javascripts/global-min.js', true ,'1.0', true );
+    wp_enqueue_script( 'global', get_template_directory_uri() . '/lib/javascripts/global-min.js', true ,'1.0', true );
   
   }
 

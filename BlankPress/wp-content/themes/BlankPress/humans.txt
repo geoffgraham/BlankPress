@@ -1,9 +1,0 @@
-/* humanstxt.org */
-
-/* BLANKPRESS THEME */
-/* by Geoff Graham */
-/* geoffgraham.me */
-/* ---------------------------------- */
-
-  Components: Foundation 5 Grid, WordPress, Lettering.js, FitText.js
-  Software: Coda, CodeKit, Git

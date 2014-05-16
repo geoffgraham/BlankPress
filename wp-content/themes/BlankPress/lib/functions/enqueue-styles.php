@@ -13,7 +13,7 @@ function blankpress_styles() {
 
   // Load Stylesheet
   wp_enqueue_style( $handle, $src, $deps, $ver, $media );
-  wp_enqueue_style('app', get_template_directory_uri().'/lib/styles/global.css', false ,'1.0', 'all' );
+  wp_enqueue_style('global', get_template_directory_uri().'/lib/styles/global.css', false ,'1.0', 'all' );
 
 }
 

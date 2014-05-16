@@ -1,14 +1,13 @@
 # BlankPress WordPress Theme
 
-A blank starter theme for WordPress projects.
+Just another blank starter theme for WordPress projects.
 
 ## Requirements
 
-Foundation requires the following:
+BlankPress requires the following:
 
-  * Ruby 1.9+
-  * [Foundation](http://foundation.zurb.com)
-  * [Compass](http://compass-style.org/): `gem install compass`
+  * [Bourbon](http://bourbon.io/)
+  * [Neat](http://neat.bourbon.io/)
 
 ## Installation
 
@@ -27,9 +26,11 @@ If you just want the theme files, then it might be easier to download the full r
 Learn more about WordPress installation: 
 [WordPress Codex](http://codex.wordpress.org/Installing_WordPress#Famous_5-Minute_Install)
 
-## Foundation
+## Bourbon
 
-This theme uses a custom installation of Foundation 5 that only imports and compiles the grid. Other components are also available, if needed, by uncommenting components in `wp-content/themes/BlankPress/lib/styles/scss/foundation/app.scss`.
+This theme uses [Bourbon Neat](http://neat.bourbon.io/) for the layout grid. Neat requires Bourbon, so that means there are a ton of SASS mixins and functions included in this package right out of the box. Refer to the [Bourbon docs](http://bourbon.io/docs/) for more info on usage.
+
+Bourbon files are located in `wp-content/themes/BlankPress/lib/styles/scss/vendor`.
 
 ## File Structure
 
@@ -52,7 +53,3 @@ All Javascript for the theme is enqueued by WordPress in `lib/functions/enqueue-
 ## Learn More About WordPress
 
 [WordPress Codex](http://codex.wordpress.org)
-
-## Learn More About Foundation
-
-[Foundation Docs](http://foundation.zurb.com/docs)

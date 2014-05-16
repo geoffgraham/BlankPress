@@ -1,0 +1,11 @@
+// FONT
+// Get all my font needs from a single mixin
+
+@mixin font($family: $primaryFont, $color: $grayDark, $size: 18, $height: 18px, $weight: 500, $style: normal) {
+    color: $color;
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    line-height: emCalc($height);
+    @include font-size($size);
+}

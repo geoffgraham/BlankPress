@@ -1,0 +1,21 @@
+// MEDIA QUERY VARIABLES
+
+// Breakpoints
+$baby:     rem-calc(321) !default;
+$mama:     rem-calc(500) !default;
+$uncle:    rem-calc(700) !default;
+$papa:     rem-calc(1000) !default;
+$grandma:  rem-calc(1200) !default;
+$grandpa:  rem-calc(1600) !default;
+
+
+// Media Queries
+$screen: "only screen" !default;
+$puddle: "only screen and (min-width:"#{$baby}")" !default;
+$pool: "only screen and (min-width:"#{$mama}")" !default;
+$lake: "only screen and (min-width:"#{$uncle}")" !default;
+$bay: "only screen and (min-width:"#{$papa}")" !default;
+$ocean: "only screen and (min-width:"#{$grandma}")" !default;
+$sea: "only screen and (min-width:"#{$grandpa}")" !default;
+$landscape: "only screen and (orientation: landscape)" !default;
+$portrait: "only screen and (orientation: portrait)" !default;

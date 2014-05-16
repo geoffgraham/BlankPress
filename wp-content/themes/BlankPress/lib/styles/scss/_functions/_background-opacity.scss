@@ -1,0 +1,7 @@
+// BACKGROUND OPACITY
+// Uses rgba() function to convert color variables into rgba for backgrounds
+
+@mixin background-opacity($color, $opacity: 0.5) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}

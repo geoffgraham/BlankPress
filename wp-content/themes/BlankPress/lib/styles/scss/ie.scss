@@ -1,39 +1,35 @@
 //-----------------------------------------------------------------------------
 // PROJECT NAME
-// Styles for IE8 and below
+// Index of all imported components
 //-----------------------------------------------------------------------------
 
 // CONFIG
 //------------------------------------------------------------------------------
 
-$old-ie: true; // mixins/_old-ie.scss
-$px-only: true; // mixins/_rempx.scss
+$px-only: true; // _functions/_rempx.scss
+$old-ie:  true; // _functions/old-ie.scss
 
+ 
 // IMPORT VENDOR STYLES
 //------------------------------------------------------------------------------
 
-@import 
-  "compass/css3",
-  "foundation/app.scss";
-
-
-// IMPORT VENDOR STYLES
-//------------------------------------------------------------------------------
-
-@import 
-  "compass/css3",
-  "foundation/app.scss";
+@import "vendor/bourbon/_bourbon.scss";
+@import "vendor/neat/_neat.scss";
 
 
 // IMPORT FUNCTIONS
 //------------------------------------------------------------------------------
 
 @import 
+  "_functions/_rem.scss",
+  "_functions/_u.scss",
   "_functions/_animate/animate.scss",
   "_functions/_background-opacity.scss",
   "_functions/_font-size.scss",
   "_functions/_font.scss",
-  "_functions/_keyframes.scss";
+  "_functions/_keyframes.scss",
+  "_functions/_old-ie.scss",
+  "_functions/_rgba.scss";
 
 
 // IMPORT BITS STYLES
@@ -58,6 +54,10 @@ $px-only: true; // mixins/_rempx.scss
 //------------------------------------------------------------------------------
 
 @import
+  "_components/_buttons.scss",
+  "_components/_comments.scss",
+  "_components/_navigation.scss",
+  "_components/_tooltip.scss",
   "_components/_wrapper.scss";
 
 
@@ -73,5 +73,5 @@ $px-only: true; // mixins/_rempx.scss
 // IMPORT PAGE STYLES
 //------------------------------------------------------------------------------
 
-@import
-  "_pages/_home.scss";
+// @import
+//   "_pages/_home.scss";

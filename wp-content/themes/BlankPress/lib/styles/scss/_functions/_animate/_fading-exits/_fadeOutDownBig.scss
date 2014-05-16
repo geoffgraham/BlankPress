@@ -23,7 +23,7 @@
   100% {opacity: 0; transform: translateY(2000px);}
 }
 
-@mixin fadeOutDownBig($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin fadeOutDownBig($duration, $delay, $function, $fill, $visibility) {
   @include animation-name(fadeOutDownBig);
   @include duration($duration);
   @include delay($delay);

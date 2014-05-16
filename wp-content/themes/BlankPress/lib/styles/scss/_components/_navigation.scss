@@ -1,0 +1,119 @@
+// NAVIGATION
+// Be sure to include approrpiate js file
+//---------------------------------------
+
+// Variables
+$placement: data-placement;
+
+// Menu Toggle
+a.menu-link {
+  float: right;
+  display: block;
+  margin-right: 5%;
+	position: relative;
+	top: 30%;
+	@include font-size(20);
+	
+	@media #{$lake} {
+		@include font-size(36);
+  }
+}
+
+// Main Navigation
+nav[role="navigation"] {
+  background: $primaryColor;
+  clear: both;
+  color: $white;
+  overflow: hidden;
+  padding: u(rem(8)) u(rem(16)) u(rem(16)) u(rem(16));
+  transition: all 0.3s ease-out 0;
+  
+  @media #{$lake} {
+  	padding-top: u(rem(16));
+  }
+  
+  // Top Menu Styles
+  &[#{$placement}="top"] {
+    position: relative;
+    z-index: 4;
+    
+    ul {
+      background: $primaryColor;
+      margin: 0;
+    	padding: 0;
+    	
+    	@media #{$lake} { 
+    	  background: transparent;
+    	  border: 0;
+      	margin: 0;
+      }
+     
+    }
+    
+    li {
+      text-align: center;
+      
+      @media #{$lake} { 
+    		display: inline-block;
+    		margin-right: u(rem(15));
+    		text-align: right;
+      }
+      
+    }
+    
+    li a {
+    	display: block;
+    	padding: 0 0.4em;
+    	border-bottom: 1px solid $primaryDark;
+    	
+    	@media #{$lake} { 
+    		border: 0;
+    		float: left;
+      }
+      
+    }
+    
+    .active { max-height: u(rem(500)); }
+    
+  }
+  
+}
+
+// Javascript Enabled
+.js nav[role=navigation] {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  
+  // Right Menu
+  &[#{$placement}="right"] {
+    right: u(rem(-275));
+    width: u(rem(275));
+  }
+  
+  // Left Menu
+  &[#{$placement}="left"] {
+    left: u(rem(-275));
+    width: u(rem(275));
+  }
+  
+  // Top Menu
+  &[#{$placement}="top"] {
+  
+    max-height: 0;
+    overflow: hidden;
+    top: u(rem(-24));
+    
+    @media #{$lake} {
+      float: right;
+  		overflow: visible;
+  		top: u(rem(-5));
+    }
+    
+		@media #{$ocean} { 
+  	  float: left;
+    }
+    
+  }
+  
+}

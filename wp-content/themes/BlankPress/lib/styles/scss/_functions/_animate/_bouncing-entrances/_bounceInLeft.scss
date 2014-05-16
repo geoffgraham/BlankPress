@@ -33,7 +33,7 @@
   100% {transform: translateX(0);}
 }
 
-@mixin bounceInLeft($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin bounceInLeft($duration, $delay, $function, $fill, $visibility) {
   @include animation-name(bounceInLeft);
   @include duration($duration);
   @include delay($delay);

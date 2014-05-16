@@ -1,12 +1,12 @@
 // MEDIA QUERY VARIABLES
 
 // Breakpoints
-$baby:     rem-calc(321) !default;
-$mama:     rem-calc(500) !default;
-$uncle:    rem-calc(700) !default;
-$papa:     rem-calc(1000) !default;
-$grandma:  rem-calc(1200) !default;
-$grandpa:  rem-calc(1600) !default;
+$baby:     u(rem(321)) !default;
+$mama:     u(rem(500)) !default;
+$uncle:    u(rem(700)) !default;
+$papa:     u(rem(1000)) !default;
+$grandma:  u(rem(1200)) !default;
+$grandpa:  u(rem(1600)) !default;
 
 
 // Media Queries

@@ -33,7 +33,7 @@
   100% {opacity: 0; transform: scale(.3);}
 }
 
-@mixin bounceOut($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin bounceOut($duration, $delay, $function, $fill, $visibility) {
   @include animation-name(bounceOut);
   @include duration($duration);
   @include delay($delay);

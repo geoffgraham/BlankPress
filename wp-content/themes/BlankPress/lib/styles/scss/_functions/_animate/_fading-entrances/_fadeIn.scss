@@ -23,7 +23,7 @@
 	100% {opacity: 1;}
 }
 
-@mixin fadeIn($duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+@mixin fadeIn($duration, $delay, $function, $fill, $visibility) {
 	@include animation-name(fadeIn);
   @include duration($duration);
 	@include delay($delay);

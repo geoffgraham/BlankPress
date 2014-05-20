@@ -1,5 +1,6 @@
 # Require any additional compass plugins here.
-add_import_path "bower_components/foundation/scss"
+# add_import_path "bower_components/bourbon"
+# add_import_path "bower_components/neat"
 
 http_path = "/"
 css_dir = "lib/styles"

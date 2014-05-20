@@ -1,11 +1,22 @@
 {
   "name": "blankpress-wordpress-theme",
   "version": "0.0.1",
-  "private": "true",
+  "authors": [
+    "Geoff Graham <geoff@geoffgraham.me>"
+  ],
+  "description": "Just another WordPress starter theme.",
+  "license": "MIT",
+  "homepage": "geoffgraham.me",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
-    "jquery": "jquery/jquery",
-    "bourbon": "thoughtbot/bourbon",
-    "neat": "thoughtbot/neat",
-    "modernizr": "Modernizr/Modernizr"
+    "jquery": "~2.1.0",
+    "modernizr": "~2.8.2",
   }
 }

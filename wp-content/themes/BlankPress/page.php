@@ -8,7 +8,7 @@
 
 get_header(); ?>
 
-	<section class="page" role="main">
+	<section role="main">
       <div class="wrapper" role="row">
       
       <?php /* Start loop */ ?>
@@ -26,7 +26,7 @@ get_header(); ?>
       
     
     </div> <!-- page -->
-  </section> <!-- wrapper -->
+  </section>
 	
 	<?php get_sidebar(); ?>
 		

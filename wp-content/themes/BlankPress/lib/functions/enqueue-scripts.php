@@ -14,8 +14,12 @@ if (!function_exists('blankpress_scripts')) :
     wp_deregister_script( 'jquery' );
 
     // enqueue modernizr, jquery and foundation
-    wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/lib/javascripts/modernizr.js', false ,'1.0', false );
-    wp_enqueue_script( 'jquery', 'http://code.jquery.com/jquery-2.1.0.min.js', false ,'1.0', true );
+    wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/lib/bower_components/modernizr/modernizr.js', false ,'1.0', false );
+    
+    // enqueue jquery (if not already included in global)
+    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/lib/bower_components/jquery/jquery.min.js', false ,'1.0', true );
+    
+    // enqueue global
     wp_enqueue_script( 'global', get_template_directory_uri() . '/lib/javascripts/global-min.js', true ,'1.0', true );
   
   }

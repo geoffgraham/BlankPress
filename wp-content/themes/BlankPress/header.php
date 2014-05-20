@@ -23,6 +23,10 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
+  
+  <!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" href="lib/styles/ie-min.css" />
+  <![endif]-->
 </head>
 
 <body <?php body_class(); ?>>

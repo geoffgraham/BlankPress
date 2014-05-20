@@ -1,8 +1,11 @@
 {
-  "name": "foundation-compass-app",
+  "name": "blankpress-wordpress-theme",
   "version": "0.0.1",
   "private": "true",
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
+    "jquery": "jquery/jquery",
+    "bourbon": "thoughtbot/bourbon",
+    "neat": "thoughtbot/neat",
+    "modernizr": "Modernizr/Modernizr"
   }
 }

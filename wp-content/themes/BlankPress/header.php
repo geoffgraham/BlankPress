@@ -25,7 +25,7 @@
 	<?php wp_head(); ?>
   
   <!--[if (lt IE 9) & (!IEMobile)]>
-    <link rel="stylesheet" href="lib/styles/ie-min.css" />
+    <link rel="stylesheet" href="lib/styles/ie.css" />
   <![endif]-->
 </head>
 
